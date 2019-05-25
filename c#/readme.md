@@ -11,23 +11,23 @@ It is inspired by [Microsoft best practices](https://docs.microsoft.com/en-us/do
       3. [Newlines](#newlines)
   2. [Line Length](#line-length)
   3. [Commenting](#commenting)
-      1. [File/class-level comments](#fileclass-level-comments)
-      2. [Function comments](#function-comments)
-      3. [Block and inline comments](#block-and-inline-comments)
-      4. [Punctuation, spelling, and grammar](#punctuation-spelling-and-grammar)
-      5. [TODO comments](#todo-comments)
-      6. [Commented-out code](#commented-out-code)
+      1. [TODO comments](#todo-comments)
+      2. [Unfinished work / known errors](#Unfinished-work-and-known-errors)
+      3. [Commented-out code](#commented-out-code)
   4. [Methods](#methods)
-  5. [Conditional Expressions](#conditional-expressions)
-      1. [Conditional keywords](#conditional-keywords)
-  8. [Classes](#classes)
-  9. [Exceptions](#exceptions)
-  10. [Collections](#collections)
-  10. [Models](#models)
-  11. [Strings](#strings)
-  12. [Regular Expressions](#regular-expressions)
-  15. [Be Consistent](#be-consistent)
-  16. [Translation](#translation)
+      1. [Method naming](#method-naming)
+      2. [Method calls](#method-calls)
+  5. [Conditionals](#conditionals)
+      1. [Conditionals operator](#conditionals-operator)
+      1. [Ternary operator](#ternary-operator)
+      1. [Nested conditionals](#nested-conditionals)
+  8. [Syntax](#syntax)
+  9. [Classes](#classes)
+  10. [Guards](#guards)
+  11. [Exceptions](#exceptions)
+  12. [Collections](#collections)
+  13. [Strings](#strings)
+  14. [Be Consistent](#be-consistent)
 
 ## Naming
 
@@ -248,7 +248,7 @@ good:
         // do work 
     }
 ```
-### Unfinished work / known errors
+### Unfinished work and known errors
 
 #### Warnings
 Warnings are used when you know somthing is about to change or be deprecated. Warnings should be used when you know the code should change in the near future.
@@ -303,6 +303,7 @@ var isAuthorized = IsUserAuthorized(user, company, token);
 # Good
 var isAuthorized = IsUserAuthorized(user: user, company: company, usertoken: token);
 ```
+## Conditionals
 
 ### Conditionals operator
 <a name="avoid-complex-Conditionals"></a>Avoid using complex conditionals.<sup>[[link](#avoid-complex-Conditionals)]</sup>
