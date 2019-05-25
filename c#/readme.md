@@ -546,7 +546,7 @@ public class CanIDoMyStuff
 
     public void Execute()
     {
-        if (notAllowd)
+        if (notAllowed)
         {
             throw new UnauthorizedAccessException("Not allowed"); 
         }
