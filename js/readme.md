@@ -35,7 +35,7 @@ We prefer custom elements above plain html/css/js. Custom elements can more easi
 
 html
 ```html
-<custom-header header="header-text"></bondo-header>
+<custom-header header="header-text"></custom-header>
 ```
 js
 
