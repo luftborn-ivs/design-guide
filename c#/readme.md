@@ -1,6 +1,6 @@
 # C-Sharp Style Guide
 
-It is inspired by [Microsoft best practices](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions).
+This section is inspired by [Microsoft best practices](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions).
 
 
 ## Table of Contents
