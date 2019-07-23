@@ -11,7 +11,7 @@
   + [HTML](#html)
 
 + [Programming languages](#programming-languages)
-  + [C#](#c-2)
+  + [C#](#c)
   + [Go](#go)
   + [TypeScript](#TypeScript)
   + [JavaScript](#JavaScript)
