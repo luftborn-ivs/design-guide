@@ -556,6 +556,41 @@ public class CanIDoMyStuff
 
 ## Exceptions
 
+* <a name="exception-should-be-used"></a>In general, exceptions should be used/thown if somthing seems fishy or looks bad.<br>
+This means that we should not try to correct requests that might look bad, or look deferent then we expect.<br>
+We should do this to keep high stability, an application where we do exactly whats predicted of it, and ensure continuity.  
+    <sup>[[link](#exception-should-be-used)]</sup>
+
+```csharp
+// Bad 
+List<Dependency> GetAllDependencies(FormDefinition formDifinition)
+{
+    var items = formDifinition?.FieldGroups?.SelectMany(group => group.Rows)?.SelectMany(row => row.Items).ToList();
+}
+
+/* 
+Dont dont make your simple code complex by writing alot on one line
+and never use so many null safeties, you should know what null possibilities you could have, and only test for those and thow an exception if its wrong, not go on like this.
+And models should always create the list of its list-properties in the constructor. A null list should not be possible i well constructed code.
+*/
+
+//Good
+List<Dependency> GetAllDependencies(FormDefinition formDifinition)
+{
+    if (formDifinition == null)
+    {
+        throw new ArgumentException('formDifinition cannot be null');
+    }
+
+    var fieldRows = formDifinition.FieldGroups.SelectMany(group => group.Rows);
+
+    var fieldItems = fieldRows.SelectMany(row => row.Items).ToList();
+
+    return items;
+}
+```
+
+
 * <a name="exception-flow-control"></a>Prefer not to control your flow though exception. And allways use your exception in a try/catch.
     <sup>[[link](#exception-flow-control)]</sup>
 
