@@ -382,3 +382,23 @@ public class BarcodeReadException : System.Exception
 {
 }
 ```
+
+#### 26. Always use meaningfull variable names:
+
+```csharp 
+// Bad
+public void SomeFunction()
+{
+var u = new User();
+var c = new Company();
+var n = 0;
+}
+
+// Correct 
+public void SomeFunction()
+{
+var user = new User();
+var company = new Company();
+var number = 0;
+}
+```
