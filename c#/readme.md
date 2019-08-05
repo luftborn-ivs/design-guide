@@ -31,7 +31,7 @@ This section is inspired by [Microsoft best practices](https://docs.microsoft.co
 
 ## Naming
 
-We should allways try to follow the best practice naming of c# and the framework in use.
+We should always try to follow the best practice naming of c# and the framework in use.
 
 [C-Sharp caming convention](./Naming/readme.md)
 
@@ -42,7 +42,7 @@ We should allways try to follow the best practice naming of c# and the framework
 * <a name="default-indentation"></a>Use tabs with a
     4-space indent.<sup>[[link](#default-indentation)]</sup>
 * <a name="linq-indentation"></a>
-when using linq, allways add modifyers on new lines.<sup>[[link](#linq-indentation)]</sup>
+when using linq, always add modifyers on new lines.<sup>[[link](#linq-indentation)]</sup>
 ```csharp
 // bad
 var newList = list.Select(x => x.Value).Where(x => !string.IsNullOrEmptyx)).ToArray()
@@ -98,26 +98,26 @@ for (var index = 0; index < 10; index++)
 }
 ```
 
-* <a name="space-between-functions"></a>Allways space between functions.<sup>[[link](#space-between-functions)]</sup>
+* <a name="space-between-functions"></a>Always space between functions.<sup>[[link](#space-between-functions)]</sup>
 
 ```csharp
 // Bad
-void FirstFunction () 
+void FirstFunction() 
 {
     // do stuff...
 }
-void SecondFunction () 
+void SecondFunction() 
 {
     // do stuff...
 }
 
 // Good
-void FirstFunction () 
+void FirstFunction() 
 {
     // do stuff...
 }
 
-void SecondFunction () 
+void SecondFunction() 
 {
     // do stuff...
 }
